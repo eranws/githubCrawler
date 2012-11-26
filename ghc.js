@@ -1,28 +1,19 @@
 $(document).ready(function(){
 
+
 var url = "https://api.github.com/legacy/repos/search/eranws?callback=foo"
 
-var xmlhttp;
-xmlhttp=new XMLHttpRequest(); 
- 
-xmlhttp.open("GET",url,true);
-xmlhttp.send();
-
-
-  $("button").click(function(){
+    $("#div1").append(url);
 	
-    $("#div1").get(url,
-	
+    $("#div1").getJSON(url,	
+
 	function(response){
-		var meta = response.meta
-		var data = response.data
-		console.log(meta)
-		console.log(data)
-
-    
-	
-	});
-  });
+    $("#div1").append("result: \n");
+			var meta = response.meta
+			var data = response.data
+			console.log(meta)
+			console.log(data)
+		});
 });
 
 
