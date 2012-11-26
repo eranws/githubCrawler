@@ -5,7 +5,7 @@ var url = "https://api.github.com/legacy/repos/search/eranws?callback=foo"
 
     $("#div1").append(url);
 	
-    $("#div1").getJSON(url,	
+    $.getJSON(url,	
 
 	function(response){
     $("#div1").append("result: \n");
@@ -19,4 +19,9 @@ var url = "https://api.github.com/legacy/repos/search/eranws?callback=foo"
 
 
 
+/*
+    $.each(result, function(i, field){
+        $("div").append(field + " ");
+      });
+*/   
 
