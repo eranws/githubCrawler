@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-var url = "https://api.github.com/legacy/repos/search/eranws?callback=foo"
+var url = "https://api.github.com/legacy/repos/search/eranws?callback=?"
 
     $("#div1").append(url);
 	
