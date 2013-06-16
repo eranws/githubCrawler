@@ -8,7 +8,7 @@ var url = "https://api.github.com/legacy/repos/search/eranws?callback=?"
     $.getJSON(url,	
 
 	function(response){
-    $("#div1").append("result: \n");
+    $("#div1").append("result: <br/>");
 			var meta = response.meta
 			var data = response.data
 			console.log(meta)
